@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Custom Birthday Card</title>
+    <link rel="stylesheet" href="Snow.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="/Images/card.png" />
+  </head>
+  <body>
+    <button id="startBtn">Let's get Started</button>
+    <div
+      id="countdown"
+      style="display: none; text-align: center; margin-top: 20%"
+    >
+      5
+    </div>
+    <audio id="bgMusic" loop preload="auto">
+      <source src="music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div id="mainContent" style="display: none">
+      <div class="scene">
+        <div class="cake">
+          <div class="candle"></div>
+          <div class="candle"></div>
+          <div class="candle"></div>
+          <div class="cream"></div>
+          <div class="layer"></div>
+          <div class="plate"></div>
+        </div>
+        <div class="carousel">
+          <img
+            src="https://banobagi.vn/wp-content/uploads/2025/05/de-thuong-hinh-nen-cute-14.jpg"
+          />
+          <img
+            src="https://banobagi.vn/wp-content/uploads/2025/05/de-thuong-hinh-nen-cute-14.jpg"
+          />
+          <img
+            src="https://banobagi.vn/wp-content/uploads/2025/05/de-thuong-hinh-nen-cute-14.jpg"
+          />
+          <img
+            src="https://banobagi.vn/wp-content/uploads/2025/05/de-thuong-hinh-nen-cute-14.jpg"
+          />
+          <img
+            src="https://banobagi.vn/wp-content/uploads/2025/05/de-thuong-hinh-nen-cute-14.jpg"
+          />
+        </div>
+      </div>
+
+      <div class="title"><strong>Tiêu đề ở đây</strong></div>
+      <button id="mailBtn" class="mail-btn">💌 Thư bí mật</button>
+      <div class="envelope hidden" id="envelope">
+        <div class="envelope-top"></div>
+        <div class="envelope-body"></div>
+        <div class="letter">
+          <h3>💖 Gửi bạn 💖</h3>
+          <p>Nội dung ở đây</p>
+          <button id="showWishesBtn">Show Wishes 🎉</button>
+        </div>
+      </div>
+      <div
+        id="wishesContainer"
+        style="display: none; text-align: center; margin-top: 20px"
+      >
+        <div class="wishes" id="wishesContainer">
+          <div class="wish">
+            🎂 Chúc bạn sinh nhật vui vẻ!
+            <br />
+            <img
+              width="150"
+              src="https://cdn-media.sforum.vn/storage/app/media/thanhhuyen/h%C3%ACnh%20n%E1%BB%81n%20th%E1%BB%8F%20b%E1%BA%A3y%20m%C3%A0u/hinh-nen-tho-bay-mau-thumbnail.jpg"
+              alt=""
+            />
+          </div>
+          <div class="wish">
+            🎉 Mong mọi điều tốt đẹp đến với bạn!
+            <br />
+            <img
+              width="150"
+              src="https://cdn-media.sforum.vn/storage/app/media/thanhhuyen/h%C3%ACnh%20n%E1%BB%81n%20th%E1%BB%8F%20b%E1%BA%A3y%20m%C3%A0u/hinh-nen-tho-bay-mau-thumbnail.jpg"
+              alt=""
+            />
+          </div>
+          <div class="wish">
+            💖 Luôn hạnh phúc và may mắn!
+            <br />
+            <img
+              width="150"
+              src="https://cdn-media.sforum.vn/storage/app/media/thanhhuyen/h%C3%ACnh%20n%E1%BB%81n%20th%E1%BB%8F%20b%E1%BA%A3y%20m%C3%A0u/hinh-nen-tho-bay-mau-thumbnail.jpg"
+              alt=""
+            />
+          </div>
+          <div class="wish">
+            💖 Luôn hạnh phúc và may mắn!
+            <br />
+            <img
+              width="150"
+              src="https://cdn-media.sforum.vn/storage/app/media/thanhhuyen/h%C3%ACnh%20n%E1%BB%81n%20th%E1%BB%8F%20b%E1%BA%A3y%20m%C3%A0u/hinh-nen-tho-bay-mau-thumbnail.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div id="lyrics-display"></div>
+      <div id="player"></div>
+    </div>
+
+    <script src="Snow.js"></script>
+  </body>
+</html>
